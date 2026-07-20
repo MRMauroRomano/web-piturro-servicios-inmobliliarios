@@ -32,6 +32,7 @@ const properties = [
     operation: 'venta',
     price: 34000,
     location: "Dean Funes 631, Justiniano Posse",
+    status:"vendida",
     bedrooms: 1,
     bathrooms: 1,
     area: 100,
@@ -160,7 +161,7 @@ const properties = [
     name: "Casa Familiar",
     type: "casa",
     operation: 'venta',
-    price: 49000,
+    price: 45000,
     location: "Pasaje 1 de Marzo de 1911, Justiniano Posse",
     bedrooms: 3,
     bathrooms: 1,
@@ -194,6 +195,7 @@ const properties = [
     operation: 'venta',
     price: 28000,
     location: "9 de Julio 246 - Córdoba Capital",
+    status: "vendido",
     bedrooms: 0,
     bathrooms: 0,
     area: 26,
@@ -322,7 +324,7 @@ const properties = [
     name: "Departamento en Barrio Guemes",
     type: "departamento",
     operation: 'alquiler',
-    status: "alquilada",
+    status: "alquilado",
     rentPrice: 550000,
     expenses: 120000,
     location: "Marcelo T Alvear 940 - Córdoba Capital",
@@ -396,7 +398,7 @@ const properties = [
     name: "Departamento en Nva Córdoba",
     type: "departamento",
     operation: 'alquiler',
-    rentPrice: 650000,
+    rentPrice: 600000,
     expenses: 120000,
     location: "PASAJE CARLUCCI 63 - Nueva Córdoba",
     bedrooms: 1,
@@ -468,6 +470,7 @@ const properties = [
     rentPrice: 500000,
     expenses: 85000,
     location: "La Rioja 1092, Barrio Alberdi - Córdoba Capital",
+    status:"alquilado",
     bedrooms: 1,
     bathrooms: 1,
     area: 45,
@@ -492,6 +495,7 @@ const properties = [
     operation: 'alquiler',
     rentPrice: 400000,
     expenses: 25980,
+    status: "alquilado",
     location: "CALAZANS 381 - Córdoba Capital",
     bedrooms: 0,
     bathrooms: 1,
@@ -606,6 +610,7 @@ const properties = [
     operation: 'venta',
     price: 55000,
     location: "Santa Fe 414 - Luque",
+    status:"vendida",
     bedrooms: 2,
     bathrooms: 1,
     area: 480,
@@ -623,6 +628,7 @@ const properties = [
     rentPrice: 630000,
     expenses: 200000,
     location: "Obispo Salguero 724 - Bº Nueva Córdoba",
+    status:"alquilado",
     bedrooms: 1,
     bathrooms: 1,
     area: 54,
@@ -655,29 +661,7 @@ const properties = [
       "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento--8976525.webp"
     ]
   },
-  {
-    id: 42,
-    name: "Departamento en Barrio Gral. Paz",
-    type: "departamento",
-    operation: 'alquiler',
-    rentPrice: 500000,
-    expenses: 120000,
-    location: "FRAY MAMERTO ESQUIU 432 -Bº General Paz",
-    bedrooms: 1,
-    bathrooms: 1,
-    area: 50,
-    description: "MATIAS PITURRO SERVICIOS INMOBILIARIOS PRESENTA EL SIGUIENTE INMUEBLE: EXCELENTE DEPARTAMENTO UBICADO SOBRE CALLE FRAY MAMERTO ESUQIU Nº432...",
   
-    images: [
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-14068673.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-12015738.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-12011183.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-14068671.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-14076958.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-14076959.webp",
-      "https://cdncla.lavoz.com.ar/files/avisos/aviso_departamento/aviso-departamento-alquileres-14076960.webp"
-    ]
-  },
   {
     id: 43,
     name: "Departamento en Nva Córdoba",
@@ -707,6 +691,7 @@ const properties = [
     rentPrice: 280000,
     expenses: 40000,
     location: "Simón Bolivar 429 - B° Guemes",
+    status:"alquilado",
     bedrooms: 1,
     bathrooms: 0,
     area: 26,
@@ -749,9 +734,10 @@ const properties = [
     name: "Departamento en Nueva Córdoba",
     type: "departamento",
     operation: 'alquiler',
-    rentPrice: 850000,
+    rentPrice: 800000,
     expenses: 115000,
     location: "Pasaje Carlucci 13 - Nueva Córdoba",
+
     bedrooms: 2,
     featured: true,
     bathrooms: 2,
@@ -835,27 +821,7 @@ const properties = [
     ]
   },
 
-  {
-    id: 50,
-    name: "Departamento en Nva Córdoba",
-    type: "departamento",
-    operation: 'alquiler',
-    rentPrice: 800000,
-    expenses: 115000,
-    location: "Pasaje Carlucci 13, Nueva Córdoba",
-    bedrooms: 2,
-    bathrooms: 2,
-    area: 85,
-    description: "MATIAS PITURRO SERVICIOS INMOBILIARIOS TE PRESENTA EL SIGUIENTE INMUEBLE EN ALQUILER:EL DEPARTAMENTO POSEE DOS DORMITORIOS CADA UNA DE LOS MISMOS CONTIENEN SUS PLACARES,TIENE UNA TERCERA HABITACION PEQUEÑA O ESCRITORIO,COCINA COMEDOR MUY AMPLIA TOTALMENTE EQUIPADA,DOS BAÑOS,UN LIVING AMPLIO Y MUY LUMINOSO,OPCIONAL COCHERA",
-    
-    images: ["https://cdncla.lavoz.com.ar/resizeImage/800x450/avisos/aviso_departamento/4203332/inmuebles-departamento-alquileres-4203332-2c2b1922-e56e-4981-9e35-9307614203eb.webp",
-        "https://cdncla.lavoz.com.ar/resizeImage/800x450/avisos/aviso_departamento/4203332/inmuebles-departamento-alquileres-4203332-cdb341b6-6d5e-4248-bf1a-e9c10d747927.webp",
-        "https://cdncla.lavoz.com.ar/resizeImage/800x450/avisos/aviso_departamento/4203332/inmuebles-departamento-alquileres-4203332-5727237e-4ad1-43f6-96cb-850d984b69c6.webp",
-        "https://cdncla.lavoz.com.ar/resizeImage/800x450/avisos/aviso_departamento/4203332/inmuebles-departamento-alquileres-4203332-d53bc606-1940-4250-9a66-5d5ebee44acb.webp",
-      "https://cdncla.lavoz.com.ar/resizeImage/800x450/avisos/aviso_departamento/4203332/inmuebles-departamento-alquileres-4203332-7bb89348-eb85-4090-bf1b-fa24f86233b7.webp",
-      
-    ]
-  },
+  
 
   {
     id: 51,
@@ -941,10 +907,14 @@ function createPropertyCardHTML(property) {
   const isVenta = property.operation === 'venta';
 
   // 1. Lógica del cartel de Vendida / Alquilada
-  const statusBanner = property.status === 'alquilada' 
-    ? `<div class="status-banner banner-alquilada">ALQUILADA</div>`
+  const statusBanner = property.status === 'alquilado' 
+    ? `<div class="status-banner banner-alquilado">ALQUILADO</div>`
     : property.status === 'vendida'
     ? `<div class="status-banner banner-vendida">VENDIDA</div>`
+    : property.status === "vendido"
+    ? `<div class="status-banner banner-vendido">VENDIDO</div>`
+     : property.status === "alquilada"
+    ? `<div class="status-banner banner-alquilada">ALQUILADA</div>`
     : '';
 
   return `

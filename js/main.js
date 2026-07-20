@@ -165,3 +165,44 @@ if (document.readyState === 'loading') {
 } else {
   renderFeaturedGrid();
 }
+
+
+// ==========================================
+// FUNCIONALIDAD MENÚ HAMBURGUESA
+// ==========================================
+function initHamburgerMenu() {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  if (!hamburgerBtn || !navMenu) return;
+
+  // Abrir / Cerrar al hacer clic en el botón
+  hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Cerrar al hacer clic en cualquier enlace del menú
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburgerBtn.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Cerrar al hacer clic fuera del menú desplegado
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+      hamburgerBtn.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+}
+
+// Inicialización automática
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHamburgerMenu);
+} else {
+  initHamburgerMenu();
+}
