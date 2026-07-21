@@ -376,7 +376,7 @@ const properties = [
     name: "Terreno en Alta Gracia",
     type: "terreno",
     operation: 'venta',
-    price: 20000,
+    price: 18000,
     location: "Los Alerces 100 - Alta Gracia , Córdoba ",
     bedrooms: 0,
     bathrooms: 0,

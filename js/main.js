@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    `*Mensaje:* ${message}`;
 
       // Reemplaza con tu número comercial
-      const whatsappNumber = '+54 351 341-6380'; 
+      const whatsappNumber = '543513416380'; 
       window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
     });
   }
